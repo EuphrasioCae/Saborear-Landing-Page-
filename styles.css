@@ -6,7 +6,10 @@ body {
 }
 
 .mainDiv{
-    background-color: rgb(255, 255, 137);
+    background-image: linear-gradient(
+        #f52b2b 1%,
+        rgb(255, 255, 137)
+    );
 }
 
 header {
@@ -46,9 +49,10 @@ header {
   }
 
 .carousel-item img {
+    border-radius: 30px;
     margin-top: 10px;
-    height: 30%; /* Ajusta a altura conforme necessário */
-    width: 40%; /* Ajusta a largura conforme necessário */
+    height: 35%; /* Ajusta a altura conforme necessário */
+    width: 35%; /* Ajusta a largura conforme necessário */
     object-fit: cover; /* Garante que a imagem mantenha sua proporção */
 }
 
