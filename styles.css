@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: larger;
 }
 
 .mainDiv{
     background-image: linear-gradient(
-        #ff4646 1%,
+        rgb(255, 255, 100) 1%,
         rgb(252, 252, 151)
     );
 }
@@ -79,6 +80,17 @@ header {
 
 .MainText {
     max-width: 60%; /* Limita a largura do texto para 60% */
+    position: relative; /* Necessário para que 'price' seja posicionado em relação a este contêiner */
+    padding-bottom: 8%; /* Espaçamento inferior para acomodar o preço */
+}
+
+.price {
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px; /* Espaçamento interno opcional */
+    border-radius: 5px; /* Cantos arredondados opcionais */ 
 }
 
 .MainText h2{
@@ -110,7 +122,7 @@ header {
     position: fixed; /* Posicionamento fixo em relação à janela */
     right: 20px; /* Distância da borda direita */
     bottom: 20px; /* Distância da borda inferior */
-    background-color: #ececec2f; /* Cor de fundo para destacar o botão */
+    background-color: #ececec00; /* Cor de fundo para destacar o botão */
     padding: 10px; /* Espaçamento interno */
     border-radius: 50%; /* Bordas arredondadas */
     color: black;
@@ -144,7 +156,6 @@ footer {
 
 @media (max-width: 1250px) {
     /* … */
-    
     .MainSection {
         width: 80%;
         margin: 90px auto 10px;
@@ -166,7 +177,7 @@ footer {
     }
     
     .MainText {
-        max-width: 60%; /* Limita a largura do texto para 60% */
+        padding-bottom: 12%; /* Espaçamento inferior para acomodar o preço */
     }
     
     .MainText h2{
@@ -182,5 +193,29 @@ footer {
     }
     .imgMain{
         border: 3px solid rgba(0, 0, 0, 0.13); /* Borda preta com 50% de opacidade */
+    }
+  }
+
+  @media (max-width: 685px) {
+    .price {
+        font-size: medium;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .MainText {
+        padding-bottom: 20%; /* Espaçamento inferior para acomodar o preço */
+    }
+  }
+
+  @media (max-width: 395px) {
+    .MainText {
+        padding-bottom: 22%; /* Espaçamento inferior para acomodar o preço */
+    }
+  }
+
+  @media (max-width: 356px) {
+    .MainText {
+        padding-bottom: 30%; /* Espaçamento inferior para acomodar o preço */
     }
   }
