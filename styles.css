@@ -150,6 +150,14 @@ footer {
     display: flex;
     flex-direction: column;
 }
+.footer-contact{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.footer-contact-p{
+    margin: 0 10px 0 0;
+}
 .aContato{
     text-decoration: none;
 }
